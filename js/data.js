@@ -17,7 +17,7 @@ const SITE = {
   // Hero headline. The last word is shown in the shiny italic style.
   headline: ["I design, build", "& test"],
   headlineAccent: "machines.",
-  intro: "Powertrain @ UW Baja SAE. Based in Waterloo.",
+  intro: "Member @ UW Baja SAE Design Team. Based in Waterloo.",
   introSub: "Mechanical Engineering, University of Waterloo.",
 };
 
