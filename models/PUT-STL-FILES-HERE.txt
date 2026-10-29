@@ -1,0 +1,1 @@
+﻿Put SolidWorks .stl exports here (cvt-primary.stl, camera-mount.stl).
