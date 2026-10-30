@@ -14,8 +14,8 @@ const SITE = {
   location: "Waterloo, ON",
   // Photos of you on the Info page. They rotate automatically.
   // Add as many as you like; any file that isn't in /images yet is skipped.
-  portraits: ["images/portrait.jpg", "images/portrait-2.jpg", "images/portrait-3.jpg", "images/portrait-4.jpg"],
-  portraitSeconds: 2.5, // how long each photo shows
+  portraits: ["images/portrait.jpg", "images/portrait-2.jpg", "images/portrait-3.jpg", "images/portrait-4.jpg", "images/portrait-5.jpg"],
+  portraitSeconds: 2.8, // how long each photo shows
 
   // Hero headline. The last word is shown in the shiny italic style.
   headline: ["I design, build", "& test"],
@@ -38,7 +38,7 @@ const PROJECTS = [
     tag: "CAD · Baja SAE",
     summary: "Reverse-modelled the CVT primary currently on the Baja car in SolidWorks to support drivetrain optimization.",
     role: "Powertrain Team Member",
-    tools: "SolidWorks, calipers, PDM (3DX)",
+    tools: "SolidWorks, calipers, PDM (Kenesto)",
     timeline: "2026",
     cover: "images/cvt-primary.jpg",
     gallery: ["images/cvt-primary-2.jpg", "images/cvt-primary-3.jpg"],
