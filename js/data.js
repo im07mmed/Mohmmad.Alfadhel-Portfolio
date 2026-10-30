@@ -116,7 +116,7 @@ const PROJECTS = [
     tools: "SolidWorks, AutoCAD",
     timeline: "Engineering Graphics & Design",
     cover: "images/graphics.jpg",
-    gallery: ["images/graphics-2.jpg"],
+    gallery: ["images/graphics-2.jpg", "images/graphics-3.jpg"],
     model: "",
     problem: "Communicate part geometry and tolerances clearly enough that someone else could manufacture it.",
     process: "Modelled parts and assemblies in SolidWorks, then produced fully dimensioned drawings with GD&T callouts and bills of materials.",
