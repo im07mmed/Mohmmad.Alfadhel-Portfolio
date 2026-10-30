@@ -12,7 +12,10 @@ const SITE = {
   linkedin: "https://www.linkedin.com/in/mohammad-al-fadhel",
   resume: "resume.pdf",
   location: "Waterloo, ON",
-  portrait: "images/portrait.jpg", // your photo for the Info page
+  // Photos of you on the Info page. They rotate automatically.
+  // Add as many as you like; any file that isn't in /images yet is skipped.
+  portraits: ["images/portrait.jpg", "images/portrait-2.jpg", "images/portrait-3.jpg", "images/portrait-4.jpg"],
+  portraitSeconds: 2.5, // how long each photo shows
 
   // Hero headline. The last word is shown in the shiny italic style.
   headline: ["I design, build", "& test"],

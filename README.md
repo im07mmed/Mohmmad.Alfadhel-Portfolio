@@ -4,16 +4,37 @@
 Double-click **`index.html`**. It opens in your browser.
 (The 3D viewer only works once the site is online. On your computer it shows a "coming soon" box, which is normal.)
 
+## Pages
+- **`index.html`** is the Info page (the first page visitors see): headline, about, education, experience, skills.
+- **`work.html`** has the project cards.
+- **`project.html`** is one template that shows any project.
+- `info.html` only forwards old links to the home page.
+
 ## Change any text
 Open **`js/data.js`** in Notepad or VS Code. Everything is there: your headline, projects, experience, and skills.
 - Keep the `"quotes"` around text and the `,` commas between items.
 - Save, then refresh the browser.
 
-Your bio paragraph is in **`info.html`**. Search for `Edit your bio here`.
+Your bio paragraph is in **`index.html`**. Search for `Edit your bio here`.
 
 ## Add photos
 Put your photos in the **`images`** folder using the exact names below. They appear automatically.
 Until a photo exists, the site shows a grey "Photo coming soon" box with the filename it's expecting.
+
+> **Capital letters matter online.** Your PC treats `photo.JPG` and `photo.jpg` as the same file, but the web server doesn't.
+> The site now tries both versions of the ending (`.jpg`/`.JPG`, `.stl`/`.STL`), but the part *before* the dot must match exactly.
+
+**Photo shapes (so nothing important gets cut off):**
+| Where | Best shape | What happens |
+|---|---|---|
+| Project card (Work page) | **4:3 landscape**, the normal shape of a phone photo held sideways | Other shapes get trimmed at the edges to fit the card |
+| Project page main photo & gallery | **Any shape** | Always shown whole, never cropped |
+| Portrait photos | **3:4 portrait**, the normal shape of a phone photo held upright | Other shapes get trimmed to fit |
+
+Keep each photo under about 500 KB (around 1600 px wide) so the site loads fast. Squoosh.app shrinks photos for free.
+
+**Rotating portraits:** name them `portrait.jpg`, `portrait-2.jpg`, `portrait-3.jpg`, `portrait-4.jpg`. Any that don't exist are skipped.
+To use more photos or change the speed, edit `portraits` and `portraitSeconds` near the top of `data.js`.
 
 | Project | Main photo | Extra gallery photos |
 |---|---|---|
@@ -24,7 +45,7 @@ Until a photo exists, the site shows a grey "Photo coming soon" box with the fil
 | Dynamometer | `dynamometer.jpg` | `dynamometer-2.jpg` |
 | Drawings / GD&T | `graphics.jpg` | `graphics-2.jpg` |
 | Reports | `reports.jpg` | — |
-| Your headshot (Info page) | `portrait.jpg` | — |
+| Photos of you (Info page) | `portrait.jpg` | `portrait-2.jpg`, `portrait-3.jpg`, `portrait-4.jpg` |
 
 Want more or fewer gallery photos? Edit the `gallery: [ ... ]` list for that project in `data.js`.
 Tip: keep photos under ~1 MB each so the site loads fast. Squoosh.app can shrink them.

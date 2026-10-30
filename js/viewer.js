@@ -14,13 +14,16 @@ function initViewer() {
   const file = el.dataset.model;
   showMessage(el, "Loading model…", "");
 
-  new STLLoader().load(
+  const loader = new STLLoader();
+  const fail = () => showMessage(el, "3D model coming soon",
+      `Export the part from SolidWorks as STL and save it as <code>${file}</code>.<br>
+       <small>(3D models only load once the site is online, or through a local preview server.)</small>`);
+  // try "part.stl", then "part.STL" (web servers care about capital letters)
+  loader.load(
     file,
     geometry => build(el, geometry),
     undefined,
-    () => showMessage(el, "3D model coming soon",
-      `Export the part from SolidWorks as STL and save it as <code>${file}</code>.<br>
-       <small>(3D models only load once the site is online, or through a local preview server.)</small>`)
+    () => altCase(file) ? loader.load(altCase(file), geometry => build(el, geometry), undefined, fail) : fail()
   );
 }
 
